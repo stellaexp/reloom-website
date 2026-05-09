@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>South West Studio | Website Optimisation & Modernisation</title>
+  <meta name="description" content="South West Studio helps small businesses optimise, clean up and modernise the websites they already have." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #120f14;
+      --lilac: #c4a7e7;
+      --lilac-soft: #ead9ff;
+      --tobacco: #9b623a;
+      --tobacco-soft: #f1d3c3;
+      --cream: #f6f2ff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(196, 167, 231, 0.16), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(155, 98, 58, 0.18), transparent 34%),
+        #120f14;
+      color: var(--cream);
+      overflow-x: hidden;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(20px);
+      box-shadow:
+        0 0 40px rgba(196, 167, 231, 0.08),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+    }
+
+    .lilac-glow {
+      box-shadow:
+        0 0 0 1px rgba(196, 167, 231, 0.16),
+        0 0 44px rgba(196, 167, 231, 0.18);
+    }
+
+    .tobacco-glow {
+      box-shadow:
+        0 0 0 1px rgba(155, 98, 58, 0.22),
+        0 0 44px rgba(155, 98, 58, 0.18);
+    }
+
+    .fade-up {
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .fade-up-delay {
+      animation: fadeUp 0.8s ease 0.14s both;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#120f14]/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+      <a href="#" class="text-xl font-semibold tracking-tight text-white">
+        Reloom
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm text-white/60 md:flex">
+        <a href="#services" class="transition hover:text-[#c4a7e7]">Services</a>
+        <a href="#approach" class="transition hover:text-[#c4a7e7]">Approach</a>
+        <a href="#process" class="transition hover:text-[#c4a7e7]">Process</a>
+        <a href="#contact" class="transition hover:text-[#c4a7e7]">Contact</a>
+      </nav>
+
+      <a href="#contact"
+         class="rounded-2xl border border-[#c4a7e7]/30 bg-[#c4a7e7]/10 px-5 py-3 text-sm font-medium text-[#f3e8ff] transition hover:bg-[#c4a7e7]/20 lilac-glow">
+        Book a Website Review
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="mx-auto grid max-w-7xl gap-16 px-6 py-24 md:grid-cols-[1.08fr_0.92fr] md:py-32">
+        <div class="fade-up flex flex-col justify-center">
+          <p class="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70">
+            <span class="h-2 w-2 rounded-full bg-[#c4a7e7]"></span>
+            Website optimisation & modernisation
+          </p>
+
+          <h1 class="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight md:text-7xl">
+            Modernise the website you already have.
+          </h1>
+
+          <p class="mt-8 max-w-2xl text-lg leading-8 text-white/65">
+            Reloom helps small businesses improve outdated websites through optimisation,
+            cleanup, performance improvements and practical modernisation — without unnecessary redesigns
+            or expensive rebuilds.
+          </p>
+
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="#contact"
+               class="rounded-2xl bg-[#c4a7e7] px-7 py-4 text-center font-semibold text-[#1a1320] transition hover:scale-[1.02]">
+              Book a Website Review
+            </a>
+
+            <a href="#services"
+               class="rounded-2xl border border-white/10 bg-white/5 px-7 py-4 text-center font-medium text-white transition hover:bg-white/10">
+              Explore Services
+            </a>
+          </div>
+
+          <div class="mt-12 grid gap-4 text-sm text-white/55 sm:grid-cols-3">
+            <div class="glass rounded-2xl p-4">✓ Improve speed & performance</div>
+            <div class="glass rounded-2xl p-4">✓ Modernise existing layouts</div>
+            <div class="glass rounded-2xl p-4">✓ Reduce technical issues</div>
+          </div>
+        </div>
+
+        <div class="fade-up-delay">
+          <div class="glass lilac-glow rounded-[2rem] p-8">
+            <div class="mb-8 flex items-center justify-between">
+              <div>
+                <p class="text-sm text-white/50">Website Health Snapshot</p>
+                <h2 class="mt-2 text-3xl font-semibold">Common website issues</h2>
+              </div>
+
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#c4a7e7]/15 text-2xl">
+                ✦
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="tobacco-glow rounded-2xl border border-white/5 bg-[#2a1e1a]/40 p-5">
+                <p class="font-semibold text-[#f1d3c3]">Slow loading pages</p>
+                <p class="mt-2 text-sm text-white/55">
+                  Visitors leave before they enquire or convert.
+                </p>
+              </div>
+
+              <div class="lilac-glow rounded-2xl border border-white/5 bg-[#1f1826]/60 p-5">
+                <p class="font-semibold text-[#ead9ff]">Poor mobile usability</p>
+                <p class="mt-2 text-sm text-white/55">
+                  Difficult experiences on phones and tablets reduce trust.
+                </p>
+              </div>
+
+              <div class="tobacco-glow rounded-2xl border border-white/5 bg-[#2a1e1a]/40 p-5">
+                <p class="font-semibold text-[#f1d3c3]">Technical debt</p>
+                <p class="mt-2 text-sm text-white/55">
+                  Old plugins, broken layouts and outdated systems become harder to maintain.
+                </p>
+              </div>
+
+              <div class="lilac-glow rounded-2xl border border-white/5 bg-[#1f1826]/60 p-5">
+                <p class="font-semibold text-[#ead9ff]">Outdated user experience</p>
+                <p class="mt-2 text-sm text-white/55">
+                  The website no longer reflects the quality or reliability of the business behind it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="mx-auto max-w-7xl px-6 py-16">
+      <div class="glass rounded-[2rem] p-10 md:p-12">
+        <p class="mb-4 text-sm uppercase tracking-[0.25em] text-[#c4a7e7]">
+          Our Approach
+        </p>
+
+        <h2 class="max-w-4xl text-4xl font-bold tracking-tight md:text-5xl">
+          Many businesses do not need a completely new website.
+        </h2>
+
+        <p class="mt-6 max-w-4xl text-lg leading-8 text-white/60">
+          They need a faster, cleaner and more reliable version of the one they already have.
+          Reloom is not a design agency. We focus on practical website improvement:
+          optimising existing sites, cleaning up technical problems, improving performance and modernising
+          the user experience without unnecessary complexity.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="mx-auto max-w-7xl px-6 py-24">
+      <div class="mb-14 max-w-3xl">
+        <p class="mb-4 text-sm uppercase tracking-[0.25em] text-[#c4a7e7]">
+          Services
+        </p>
+
+        <h2 class="text-4xl font-bold tracking-tight md:text-5xl">
+          Practical website improvement for small businesses.
+        </h2>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="glass lilac-glow rounded-[2rem] p-8 transition hover:-translate-y-1">
+          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#c4a7e7]/15 text-3xl">
+            ✦
+          </div>
+
+          <h3 class="text-2xl font-semibold">
+            Website Modernisation
+          </h3>
+
+          <p class="mt-4 leading-8 text-white/60">
+            Improve and modernise your existing website without starting from scratch.
+            Keep what works, refine what does not, and make the site feel current again.
+          </p>
+        </article>
+
+        <article class="glass tobacco-glow rounded-[2rem] p-8 transition hover:-translate-y-1">
+          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#9b623a]/20 text-3xl">
+            ⚡
+          </div>
+
+          <h3 class="text-2xl font-semibold">
+            Performance & Technical Cleanup
+          </h3>
+
+          <p class="mt-4 leading-8 text-white/60">
+            Fix slow pages, technical debt, broken layouts, SEO issues and outdated systems
+            that make your website harder to use or maintain.
+          </p>
+        </article>
+
+        <article class="glass lilac-glow rounded-[2rem] p-8 transition hover:-translate-y-1">
+          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#c4a7e7]/15 text-3xl">
+            🛠
+          </div>
+
+          <h3 class="text-2xl font-semibold">
+            Ongoing Website Support
+          </h3>
+
+          <p class="mt-4 leading-8 text-white/60">
+            Reliable maintenance, updates, backups and support to keep your existing website
+            stable, secure and easier to manage.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-6 pb-24">
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="glass lilac-glow rounded-[2rem] p-8">
+          <p class="mb-4 text-sm uppercase tracking-[0.25em] text-[#c4a7e7]">
+            What we do
+          </p>
+
+          <h3 class="text-3xl font-bold tracking-tight">
+            Optimise what already exists.
+          </h3>
+
+          <p class="mt-5 leading-8 text-white/60">
+            We help you get more from your current website by improving speed, structure,
+            mobile usability, technical stability and day-to-day maintainability.
+          </p>
+        </div>
+
+        <div class="glass tobacco-glow rounded-[2rem] p-8">
+          <p class="mb-4 text-sm uppercase tracking-[0.25em] text-[#f1d3c3]">
+            What we are not
+          </p>
+
+          <h3 class="text-3xl font-bold tracking-tight">
+            Not a traditional design studio.
+          </h3>
+
+          <p class="mt-5 leading-8 text-white/60">
+            We do not push for full redesigns. If your website can be improved,
+            cleaned up and modernised without starting over, that is where we focus first.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="border-y border-white/5 bg-black/10">
+      <div class="mx-auto max-w-7xl px-6 py-24">
+        <div class="mb-14 max-w-3xl">
+          <p class="mb-4 text-sm uppercase tracking-[0.25em] text-[#c4a7e7]">
+            Process
+          </p>
+
+          <h2 class="text-4xl font-bold tracking-tight md:text-5xl">
+            Clear, practical and collaborative.
+          </h2>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-4">
+          <div class="glass rounded-[2rem] p-6">
+            <p class="text-sm text-[#c4a7e7]">01</p>
+            <h3 class="mt-4 text-2xl font-semibold">Review</h3>
+            <p class="mt-3 text-white/60">
+              We identify technical issues, friction points and opportunities for improvement.
+            </p>
+          </div>
+
+          <div class="glass rounded-[2rem] p-6">
+            <p class="text-sm text-[#c4a7e7]">02</p>
+            <h3 class="mt-4 text-2xl font-semibold">Plan</h3>
+            <p class="mt-3 text-white/60">
+              You receive practical recommendations with clear priorities.
+            </p>
+          </div>
+
+          <div class="glass rounded-[2rem] p-6">
+            <p class="text-sm text-[#c4a7e7]">03</p>
+            <h3 class="mt-4 text-2xl font-semibold">Optimise</h3>
+            <p class="mt-3 text-white/60">
+              Your website is modernised, cleaned up and improved with minimal disruption.
+            </p>
+          </div>
+
+          <div class="glass rounded-[2rem] p-6">
+            <p class="text-sm text-[#c4a7e7]">04</p>
+            <h3 class="mt-4 text-2xl font-semibold">Support</h3>
+            <p class="mt-3 text-white/60">
+              Ongoing support helps keep everything secure, reliable and easier to manage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-7xl px-6 py-24">
+      <div class="glass lilac-glow rounded-[2.5rem] p-10 md:p-16">
+        <div class="grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
+          <div>
+            <p class="mb-4 text-sm uppercase tracking-[0.25em] text-[#c4a7e7]">
+              Get Started
+            </p>
+
+            <h2 class="text-4xl font-bold tracking-tight md:text-5xl">
+              Get practical advice on improving your current website.
+            </h2>
+
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-white/60">
+              Book a website review to identify technical issues, performance problems and opportunities
+              to modernise what you already have.
+            </p>
+          </div>
+
+          <a href="mailto:hello@southweststudio.co.uk?subject=Website%20Review%20Request"
+             class="rounded-2xl bg-[#c4a7e7] px-8 py-5 text-center font-semibold text-[#1a1320] transition hover:scale-[1.03]">
+            Book a Website Review
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 px-6 py-10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-white/40 md:flex-row md:items-center md:justify-between">
+      <p>© 2026 Reloom. All rights reserved.</p>
+      <p>Website optimisation & modernisation for small businesses.</p>
+    </div>
+  </footer>
+</body>
+</html>
